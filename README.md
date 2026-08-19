@@ -54,11 +54,25 @@ Each Cline project folder contains a `ui_messages.json` file with detailed usage
 
 | Model | Input ($/MTok) | Output ($/MTok) | Cache Write ($/MTok) | Cache Read ($/MTok) |
 |-------|----------------|-----------------|---------------------|---------------------|
-| claude-sonnet-4 | $3.00 | $15.00 | $3.75 | $0.30 |
+| claude-fable-5 | $10.00 | $50.00 | $12.50 | $1.00 |
+| claude-mythos-5 | $10.00 | $50.00 | $12.50 | $1.00 |
+| claude-opus-5 | $5.00 | $25.00 | $6.25 | $0.50 |
+| claude-opus-4-8 | $5.00 | $25.00 | $6.25 | $0.50 |
+| claude-opus-4-7 | $5.00 | $25.00 | $6.25 | $0.50 |
+| claude-opus-4-6 | $5.00 | $25.00 | $6.25 | $0.50 |
+| claude-opus-4-5 | $5.00 | $25.00 | $6.25 | $0.50 |
+| claude-opus-4-1 | $15.00 | $75.00 | $18.75 | $1.50 |
 | claude-opus-4 | $15.00 | $75.00 | $18.75 | $1.50 |
+| claude-sonnet-5 | $2.00 | $10.00 | $2.50 | $0.20 |
+| claude-sonnet-4-6 | $3.00 | $15.00 | $3.75 | $0.30 |
+| claude-sonnet-4-5 | $3.00 | $15.00 | $3.75 | $0.30 |
+| claude-sonnet-4 | $3.00 | $15.00 | $3.75 | $0.30 |
+| claude-haiku-4-5 | $1.00 | $5.00 | $1.25 | $0.10 |
 | claude-3-7-sonnet | $3.00 | $15.00 | $3.75 | $0.30 |
 | claude-3-5-sonnet | $3.00 | $15.00 | $3.75 | $0.30 |
 | claude-3-5-haiku | $0.80 | $4.00 | $1.00 | $0.08 |
+
+Cache writes are priced at the standard 5-minute cache write rate (1-hour cache writes cost more, but Cline logs don't distinguish between the two). Unrecognized models fall back to Sonnet pricing.
 
 ## 🤝 Contributing
 
